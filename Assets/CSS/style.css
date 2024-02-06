@@ -12,18 +12,40 @@ body, h1, h2, h3, p {
     color: #333;
     background-color: #fff;
   }
+
+nav {
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 18px;
+}
   
+nav a:hover {
+  text-decoration: none;
+}
+
+.nav-bar {
+  border-bottom: 1px solid #333;
+}
+
   /* Header styles */
   h1, h2, h3 {
-    font-weight: 700;
+    font-weight: 500;
   }
   
   h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   
   h2 {
-    font-size: 2em;
+    font-size: 0.75em;
+    font-style: italic;
   }
   
   h3 {
