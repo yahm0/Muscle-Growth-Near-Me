@@ -20,21 +20,45 @@
             }
           }
         }
-      </script>
+    </script>
 
 </head>
 
 <header>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./map.html">Map</a>
-        <a href="#">Contact</a>
+    <nav class="text-red-500 p-5 bg-gray-500 bg-contain bg-no-repeat border-[5px] border-red-500 mt-10 border-b-blue-500 hover:bg-gray-800 transition-all hover:scale-105 block inline flex justify-center item-center gap-5 mx-10">
+        <a href="#Home">Home</a>
+        <a href="#Map">Map</a>
+        <a href="#Contact">Contact</a>
     </nav>
 </header>
 
 
+<h2>User Address Form</h2>
+
+<form id="addressForm">
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="streetAddress">Street Address:</label><br>
+    <input type="text" id="streetAddress" name="streetAddress"><br>
+    
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+    
+    <label for="state">State/Province:</label><br>
+    <input type="text" id="state" name="state"><br>
+    
+    <label for="zipCode">Zip/Postal Code:</label><br>
+    <input type="text" id="zipCode" name="zipCode"><br>
+    
+    <button type="submit">Submit</button>
+</form>
+
 <body class="h-full w-full p-5 m-5">
-    <div id="viewDiv" class="h-full w-full p-0 m-0"></div>
+  <div id="viewDiv" class="h-full w-full p-0 m-0"></div>
     <div class="bg-green-300 p-5">User Form</div>
     <div class="bg-red-500 p-5">Places</div>
     <div class="bg-yellow-200 p-5">Div4</div>
