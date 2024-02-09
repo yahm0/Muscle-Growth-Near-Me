@@ -50,9 +50,6 @@ The website integrates with the ArcGIS API to fetch and display map data based o
 const arcgisApiKey = 'OUR_ARCGIS_API_KEY';
 const arcgisUrl = 'https://api.arcgis.com/...';
 
-function submitAddressForm(data) {
-    // Logic to pass form data to ArcGIS API for processing
-}
 Refer to [ArcGIS for Developers](https://developers.arcgis.com) for comprehensive API documentation.
 
 ## Dependencies
