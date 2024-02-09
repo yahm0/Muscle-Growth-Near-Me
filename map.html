@@ -33,11 +33,9 @@
   </nav>
 </header>
 
-<!-- <h2 class="text-2xl font-bold mb-4">User Address Form</h2> -->
-
 <body class="h-full w-full p-0 m-0">
 
-  <div class="container mx-auto mt-8 p-4">
+  <div class="container mx-auto mt-8 p-4 h-screen">
 
     <form id="addressForm" class="grid grid-cols-3 gap-4">
   
@@ -76,10 +74,20 @@
   
   </div>
 
-  <div id="viewDiv" class="h-full w-full p-0 m-0"></div>
-  <div class="bg-red-500 p-5">Places</div>
-  <div class="bg-yellow-200 p-5">Div4</div>
-  
+  <div id="viewDiv" class="h-full w-full p-0 m-0 bg-gray-300"></div>
+
+  <div class="flex h-screen items-center justify-center overflow-hidden">
+    <div class="w-72 h-96 mr-4 bg-gray-300 flex items-center justify-center rounded">
+      Card 1
+    </div>
+    <div class="w-72 h-96 mr-4 bg-gray-300 flex items-center justify-center rounded">
+      Card 2
+    </div>
+    <div class="w-72 h-96 bg-gray-300 flex items-center justify-center rounded">
+      Card 3
+    </div>
+  </div>
+
 </body>
 
 <footer class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20">
