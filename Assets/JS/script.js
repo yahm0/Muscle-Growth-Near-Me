@@ -1,11 +1,27 @@
 const arcgisApiKey = 'OUR_ARCGIS_API_KEY'; // Replace with our actual API key
-const arcgisUrl = 'https://api.arcgis.com/...'; // ArcGIS API endpoint finian this is for the fetch()
+// Using the ArcGIS Geocode API endpoint for geocoding addresses
+const arcgisUrl = `https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates`;
 
 function submitAddressForm(data) {
-    // Logic to pass form data to ArcGIS API
-    // This can include geocoding the address and fetching nearby gym locations
-}
+    // Construct the query URL
+    const queryUrl = `${arcgisUrl}?SingleLine=${encodeURIComponent(data.streetAddress + ', ' + data.city + ', ' + data.state + ', ' + data.zipCode)}&f=json&outFields=Match_addr,Addr_type&maxLocations=1&forStorage=false&token=${arcgisApiKey}`;
 
+    // Fetching geocode data from ArcGIS API
+    fetch(queryUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data.candidates && data.candidates.length > 0) {
+                const location = data.candidates[0].location;
+                console.log("Geocode success:", location);
+                // Finian here you can add more logic to use the geocoded location,
+                // such as displaying it on a map or fetching nearby gyms locations. I am leaving this up to you Finian let me know if you have issues.
+            } else {
+                console.log("No locations found");
+            }
+        })
+        .catch(error => {
+            console.error('Geocoding error:', error);
+        });
 }
 
 document.getElementById('addressForm').addEventListener('submit', function(event) {
@@ -21,16 +37,6 @@ document.getElementById('addressForm').addEventListener('submit', function(event
     };
     
     console.log(formData);
-    // You want to send the formData to a server
-    // using fetch() to POST the data to an API endpoint
-    // fetch('YOUR_ENDPOINT_HERE', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(formData),
-    // })
-    // .then(response => response.json())
-    // .then(data => console.log(data))
-    // .catch(error => console.error('Error:', error));
+    // logging formData, it should submit it to the ArcGIS API
+    submitAddressForm(formData);
 });
