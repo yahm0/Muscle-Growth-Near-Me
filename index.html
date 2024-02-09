@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="xs:text-xs s:text-s md:text-base l:text-l xl:text-xl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
     <title>Hot Steamy Muscles</title>
 </head>
 
-<header class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20">
+<header class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20 flex flex-row items-center justify-center xs:text-xs">
   <img class="mt-5 mr-5 w-auto max-h-12" src="./Assets/IMAGES/test-image.png">
   <nav class="flex gap-5 justify-center">
     <a class= "transition-all hover:scale-110" href="./index.html">Home</a>
@@ -30,15 +30,20 @@
 </header>
 
 <body>
-    <div  class="bg-[url('./Assets/IMAGES/test-image.png')] bg-cover flex justify-center p-5 mx-20 m-10 h-160">
-      <p class="bg-white h-12 w-48">Our Goal is the show Gyms in your area</p>
+    <div  class="bg-[url('./Assets/IMAGES/test-image.png')] flex justify-end mx-20 m-10 my-20">
+      <div class="w-2/3 flex flex-col items-center">
+        <p class="bg-white max-w-80 m-4 p-2">Our goal is to provide users with a comprehensive listing of gyms available in their local area, facilitating their fitness journey by offering convenient access to relevant fitness facilities.</p>
+        <a href="./map.html">
+          <button class="bg-white hover:bg-red-600 text-black transition-all hover:scale-110 font-bold py-2 px-4 rounded m-4">Go to Map</button>
+      </a>
+      </div>
     </div>
 
-    <div class="bg-red-900 flex justify-center p-5 mx-20 m-10">
-      <p class="">Don’t be scared to LIFT HEAVY! You won’t get huge and bulky, you’ll just get amazing. – Jessie Hilgenberg</p>
+    <div class="bg-red-700 flex justify-center p-5 mx-20 m-10">
+      <p class="p-2 bg-white text-black">Don’t be scared to LIFT HEAVY! You won’t get huge and bulky, you’ll just get amazing. – Jessie Hilgenberg</p>
     </div>
   
-    <footer class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20">
+    <footer class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20 flex flex-row items-center justify-center">
       <img class="mt-5 mr-5 w-auto max-h-12" src="./Assets/IMAGES/test-image.png">
       <nav class="flex gap-5 justify-center">
         <a class= "transition-all hover:scale-110" href="./index.html">Home</a>
