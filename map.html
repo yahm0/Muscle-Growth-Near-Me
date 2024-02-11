@@ -24,16 +24,19 @@
 
 </head>
 
-<header class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20">
-  <img class="mt-5 mr-5 w-auto max-h-12" src="./Assets/IMAGES/test-image.png">
-  <nav class="flex gap-5 justify-center">
-    <a class= "transition-all hover:scale-110" href="./index.html">Home</a>
-    <a class= "transition-all hover:scale-110" href="./map.html">Map</a>
-    <a class= "transition-all hover:scale-110" href="#Contact">Contact</a>
-  </nav>
-</header>
-
 <body class="h-full w-full p-0 m-0">
+
+  <header class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-4 sm:mt-10 mx-4 sm:mx-20 flex flex-row items-center justify-between text-xs sm:text-base">
+    <img class="mt-2 sm:mt-0 mr-5 w-auto max-h-12" src="./Assets/IMAGES/test-image.png">
+    <button class="transition-all hover:scale-110 text-white">
+        <!-- Mobile Menu Icon -->
+    </button>
+    <nav class="sm:flex gap-5 justify-center">
+        <a class= "transition-all hover:scale-110" href="./index.html">Home</a>
+        <a class= "transition-all hover:scale-110" href="./map.html">Map</a>
+        <a class= "transition-all hover:scale-110" href="#Contact">Contact</a>
+    </nav>
+  </header>
 
   <div class="container mx-auto mt-8 p-4 h-screen">
 
@@ -69,35 +72,41 @@
             <input type="text" id="zipCode" name="zipCode" class="mt-1 p-2 w-full rounded-md border border-gray-300">
         </div>
   
-        <button type="submit" class="col-span-3 mt-4 bg-green-500 text-white p-2 rounded-md hover:bg-green-600">Submit</button>
+        <button type="submit" class="col-span-3 mx-20 mt-4 bg-red-600 text-white p-2 rounded-md hover:bg-red-800 hover:scale-105">Submit</button>
     </form>
   
   </div>
 
   <div id="viewDiv" class="h-full w-full p-0 m-0 bg-gray-300"></div>
 
-  <div class="flex h-screen items-center justify-center overflow-hidden">
-    <div class="w-72 h-96 mr-4 bg-gray-300 flex items-center justify-center rounded">
-      Card 1
-    </div>
-    <div class="w-72 h-96 mr-4 bg-gray-300 flex items-center justify-center rounded">
-      Card 2
-    </div>
-    <div class="w-72 h-96 bg-gray-300 flex items-center justify-center rounded">
-      Card 3
+  <div class="flex flex-col sm:flex-row sm:scale-50 md:scale-100 h-screen items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center mt-8 sm:mt-0">
+        <div class="w-72 h-96 m-4 sm:mb-0 bg-gray-300 flex items-center justify-center rounded p-4">
+            Card 1
+        </div>
+        <div class="w-72 h-96 m-4 sm:mb-0 bg-gray-300 flex items-center justify-center rounded p-4">
+            Card 2
+        </div>
+        <div class="w-72 h-96 m-4 sm:mb-0 bg-gray-300 flex items-center justify-center rounded p-4">
+            Card 3
+        </div>
     </div>
   </div>
 
+  <footer class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-4 sm:mt-10 mx-4 sm:mx-20 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-base">
+    <nav class="flex gap-5 justify-center sm:justify-start mb-4 sm:mb-0">
+        <a class="transition-all hover:scale-110" href="./index.html">Home</a>
+        <a class="transition-all hover:scale-110" href="./map.html">Map</a>
+        <a class="transition-all hover:scale-110" href="#Contact">Contact</a>
+    </nav>
+    <div id="Contact" class="flex flex-col items-center sm:items-start">
+        <p class="mb-2">Contact Information:</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </div>
+  </footer>
 </body>
-
-<footer class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-10 mx-20">
-  <img class="mt-5 mr-5 w-auto max-h-12" src="./Assets/IMAGES/test-image.png">
-  <nav class="flex gap-5 justify-center">
-    <a class= "transition-all hover:scale-110" href="./index.html">Home</a>
-    <a class= "transition-all hover:scale-110" href="./map.html">Map</a>
-    <a class= "transition-all hover:scale-110" href="#Contact">Contact</a>
-  </nav>
-</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./Assets/JS/script.js"></script>
