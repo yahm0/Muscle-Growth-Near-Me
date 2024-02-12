@@ -3,10 +3,11 @@
 <<<<<<< HEAD
 1. [Introduction](#introduction)
 2. [Features](#features)
-5. [Project Link](#project-link)
-5. [Contributing](#contributing)
-6. [License](#license)
-7
+3. [Project Link](#project-link)
+4. [Contributing](#contributing)
+5. [License](#license)
+6.
+
 ![Project Logo](**)
 
 ## Introduction
