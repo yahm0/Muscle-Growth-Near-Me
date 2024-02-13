@@ -15,8 +15,8 @@ require([
     const mapView = new MapView({
         container: 'map',
         map: map,
-        center: [0, 0], // Default center view
-        zoom: 4 // Default zoom level
+        center: [0, 0], // Your default center
+        zoom: 4 // Your default zoom level
     });
 
     function submitAddressForm(data) {
@@ -69,21 +69,21 @@ require([
             });
     }
 
-document.getElementById('addressForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
-    
-    const formData = {
-        fullName: document.getElementById('fullName').value,
-        email: document.getElementById('email').value,
-        streetAddress: document.getElementById('streetAddress').value,
-        city: document.getElementById('city').value,
-        state: document.getElementById('state').value,
-        zipCode: document.getElementById('zipCode').value,
-    };
-    
-    console.log(formData);
-    // logging formData, it should submit it to the ArcGIS API
-    submitAddressForm(formData);
+    document.getElementById('addressForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = {
+            fullName: document.getElementById('fullName').value,
+            email: document.getElementById('email').value,
+            streetAddress: document.getElementById('streetAddress').value,
+            city: document.getElementById('city').value,
+            state: document.getElementById('state').value,
+            zipCode: document.getElementById('zipCode').value,
+        };
+
+        console.log(formData);
+        submitAddressForm(formData);
+    });
 });
 
 
