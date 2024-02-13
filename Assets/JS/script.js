@@ -19,12 +19,6 @@ require([
         zoom: 4 // Default zoom level
     });
 
-    // const searchWidget = new Search({
-    //     view: mapView
-    // });
-
-    // mapView.ui.add(searchWidget, 'top-right');
-
     function submitAddressForm(data) {
         const queryUrl = `${arcgisUrl}?SingleLine=${encodeURIComponent(data.streetAddress + ', ' + data.city + ', ' + data.state + ', ' + data.zipCode)}&f=json&outFields=Match_addr,Addr_type&maxLocations=1&forStorage=false&token=${arcgisApiKey}`;
 
