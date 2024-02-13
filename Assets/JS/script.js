@@ -15,15 +15,9 @@ require([
     const mapView = new MapView({
         container: 'map',
         map: map,
-        center: [0, 0], // Update with your default center
-        zoom: 4 // Update with your default zoom level
+        center: [0, 0], // Your default center
+        zoom: 4 // Your default zoom level
     });
-
-    const searchWidget = new Search({
-        view: mapView
-    });
-
-    mapView.ui.add(searchWidget, 'top-right');
 
     function submitAddressForm(data) {
         const queryUrl = `${arcgisUrl}?SingleLine=${encodeURIComponent(data.streetAddress + ', ' + data.city + ', ' + data.state + ', ' + data.zipCode)}&f=json&outFields=Match_addr,Addr_type&maxLocations=1&forStorage=false&token=${arcgisApiKey}`;
