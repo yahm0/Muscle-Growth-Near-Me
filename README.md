@@ -6,8 +6,6 @@
 4. [Contributing](#contributing)
 5. [License](#license)
 
-![Project Logo](**)
-
 ## Introduction
 
 This website offers to serve the user in a way that shows all gyms near by.
