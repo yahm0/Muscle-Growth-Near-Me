@@ -40,3 +40,38 @@ document.getElementById('addressForm').addEventListener('submit', function(event
     // logging formData, it should submit it to the ArcGIS API
     submitAddressForm(formData);
 });
+
+
+const openWeatherMapApiKey = 'd9c913f34b7f7ad483a86bda33cdc185';
+
+// Function to update the day/night icon based on OpenWeatherMap data
+function updateDayNightIcon(lat, lon) {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${openWeatherMapApiKey}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const now = new Date().getTime();
+            const sunrise = new Date(data.sys.sunrise * 1000).getTime();
+            const sunset = new Date(data.sys.sunset * 1000).getTime();
+            
+            const icon = now >= sunrise && now < sunset ? 'sun.png' : 'moon.png'; 
+            
+            document.getElementById('dayNightIcon').src = icon;
+            document.getElementById('dayNightIcon').alt = now >= sunrise && now < sunset ? 'Sun Icon' : 'Moon Icon';
+        })
+        .catch(error => console.error('Error fetching weather data:', error));
+}
+
+// Fetch user location from IP address using ipinfo.io
+fetch('https://ipinfo.io/json?token=6056b3ee193a2c') 
+    .then(response => response.json())
+    .then(loc => {
+        const [lat, lon] = loc.loc.split(',');
+        updateDayNightIcon(lat, lon);
+    })
+    .catch(error => console.error('Error fetching IP info:', error));
+
+
+// Call the function to update the icon when the page loads
+updateDayNightIcon();
