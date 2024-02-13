@@ -42,9 +42,11 @@ This website offers to serve the user in a way that shows all gyms near by.
 
 ## Integration with ArcGIS API
 The website integrates with the ArcGIS API to fetch and display map data based on user input. Ensure you have an ArcGIS API key and access to their mapping services. See the example JavaScript snippet below for a basic idea of how integration might be implemented.
+
 ```javascript
-const arcgisApiKey = 'OUR_ARCGIS_API_KEY';
+const arcgisApiKey = 'ARCGIS_API_KEY';
 const arcgisUrl = 'https://api.arcgis.com/...';
+```
 
 Refer to [ArcGIS for Developers](https://developers.arcgis.com) for comprehensive API documentation.
 
