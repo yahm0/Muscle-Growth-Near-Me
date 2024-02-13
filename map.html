@@ -25,7 +25,7 @@
 </head>
 
 <body class="h-full w-full p-0 m-0">
-  <header class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-4 sm:mt-10 mx-4 sm:mx-20 flex flex-row items-center justify-between text-xs sm:text-base">
+  <header class="text-red-600 p-5 bg-black flex flex-row items-center justify-between text-xs sm:text-base opacity-100 rounded">
     <img class="mt-2 sm:mt-0 mr-5 w-auto max-h-12" src="./Assets/IMAGES/handshake.png">
     <button class="transition-all hover:scale-110 text-white">
         <!-- Mobile Menu Icon -->
@@ -79,18 +79,17 @@
 
   <div id="map" class="h-full w-full p-0 m-0"></div>
 
-  <footer class="text-red-600 p-5 bg-black border-[3px] border-red-500 mt-4 sm:mt-10 mx-4 sm:mx-20 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-base">
-    <nav class="flex gap-5 justify-center sm:justify-start mb-4 sm:mb-0">
+  <footer class="text-red-600 p-5 bg-black mt-4 sm:mt-10 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-base opacity-100 rounded">
+    <div id=Contact class="flex flex-col items-center sm:items-start">
+      <p class="mb-2">Contact Information:</p>
+      <p>Email: example@example.com</p>
+      <p>Phone: +1234567890</p>
+    </div>
+    <nav class="flex gap-5 justify-center sm:justify-end mb-4 sm:mb-0">
         <a class="transition-all hover:scale-110" href="./index.html">Home</a>
         <a class="transition-all hover:scale-110" href="./map.html">Map</a>
         <a class="transition-all hover:scale-110" href="#Contact">Contact</a>
     </nav>
-    <div id="Contact" class="flex flex-col items-center sm:items-start">
-        <p class="mb-2">Contact Information:</p>
-        <p>Email: example@example.com</p>
-        <p>Phone: +1234567890</p>
-        <p>Address: 123 Main Street, City, Country</p>
-    </div>
   </footer>
 </body>
 
