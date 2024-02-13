@@ -1,35 +1,16 @@
 # Muscle Growth Near Me
 
-<<<<<<< HEAD
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Project Link](#project-link)
 4. [Contributing](#contributing)
 5. [License](#license)
-6.
 
 ![Project Logo](**)
 
 ## Introduction
 
 This website offers to serve the user in a way that shows all gyms near by.
-=======
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Integration with ArcGIS API](#integration-with-arcgis-api)
-- [Dependencies](#dependencies)
-- [Support](#support)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Overview
-Gym Maps is an interactive web application designed to help users locate gyms in their vicinity. By leveraging the powerful ArcGIS API, the application provides a dynamic map tailored to the user's specific address inputs. This project aims to deliver an intuitive and responsive interface for gym enthusiasts to easily find their next workout location.
->>>>>>> 54cc6554837962ce1c147aee68f02700d88596fb
 
 ## Features
 - **User Address Form**: Captures user address details to customize map results.
