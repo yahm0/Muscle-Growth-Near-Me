@@ -47,7 +47,7 @@ This website offers to serve the user in a way that shows all gyms nearby.
 The website integrates with the ArcGIS API to fetch and display map data based on user input. Ensure you have an ArcGIS API key and access to their mapping services. See the example JavaScript snippet below for a basic idea of how integration might be implemented.
 
 ```javascript
-const arcgisApiKey = ''AAPKe88698c0fe014a78aca0dc9a7cf22b6731RgaaSIwK-O0IwR0lVmPdf7BHALMVHUSyhzu5ZxK1b5NhBtrjitV-GqGFT9vzkT'';
+const arcgisApiKey = 'ARCGIS_API_KEY';
 const arcgisUrl = 'https://api.arcgis.com/...';
 ```
 
@@ -67,7 +67,7 @@ We welcome contributions to the Gym Maps project! Please consult our contributin
 
 ## License
 
-This project is licensed under the GNU Open License. See the [LICENSE](LICENSE.md) file for more details.
+This project is licensed under the GNU General Public License. See the [LICENSE](LICENSE.md) file for more details.
 
 ## Project Link
 
