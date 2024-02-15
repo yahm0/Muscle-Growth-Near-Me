@@ -2,13 +2,18 @@
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Project Link](#project-link)
-4. [Contributing](#contributing)
-5. [License](#license)
+3. [Getting Started](#getting-started)
+4. [Usage](#usage)
+5. [Integration with ArcGIS API](#integration-with-arcgis-api)
+6. [Dependencies](#dependencies)
+7. [Support](#support)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Project Link](#project-link)
 
 ## Introduction
 
-This website offers to serve the user in a way that shows all gyms near by.
+This website offers to serve the user in a way that shows all gyms nearby.
 
 ## Features
 - **User Address Form**: Captures user address details to customize map results.
@@ -42,22 +47,28 @@ This website offers to serve the user in a way that shows all gyms near by.
 The website integrates with the ArcGIS API to fetch and display map data based on user input. Ensure you have an ArcGIS API key and access to their mapping services. See the example JavaScript snippet below for a basic idea of how integration might be implemented.
 
 ```javascript
-const arcgisApiKey = 'ARCGIS_API_KEY';
+const arcgisApiKey = ''AAPKe88698c0fe014a78aca0dc9a7cf22b6731RgaaSIwK-O0IwR0lVmPdf7BHALMVHUSyhzu5ZxK1b5NhBtrjitV-GqGFT9vzkT'';
 const arcgisUrl = 'https://api.arcgis.com/...';
 ```
 
-Refer to [ArcGIS for Developers](https://developers.arcgis.com) for comprehensive API documentation.
-
 ## Dependencies
+
 - [Tailwind CSS](https://tailwindcss.com/) for styling.
 - [jQuery](https://jquery.com/) for simplified JavaScript operations.
 - [ArcGIS API](https://developers.arcgis.com) for mapping services.
 
 ## Support
+
 For any support-related queries, please email us at [support@example.com](mailto:support@example.com).
 
 ## Contributing
+
 We welcome contributions to the Gym Maps project! Please consult our contributing guidelines for more details on how to participate.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
+
+This project is licensed under the GNU Open License. See the [LICENSE](LICENSE.md) file for more details.
+
+## Project Link
+
+For the live version of the project, please visit: [Muscle Growth Near Me](https://yahm0.github.io/Muscle-Growth-Near-Me/).
