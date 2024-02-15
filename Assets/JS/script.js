@@ -100,10 +100,10 @@ function updateDayNightIcon(lat, lon) {
             const sunrise = new Date(data.sys.sunrise * 1000).getTime();
             const sunset = new Date(data.sys.sunset * 1000).getTime();
             
-            const icon = now >= sunrise && now < sunset ? 'sun.png' : 'moon.png'; 
+            const icon = now >= sunrise && now < sunset ? './Assets/IMAGES/sun.png' : './Assets/IMAGES/moon.png'; 
             
             document.getElementById('dayNightIcon').src = icon;
-            document.getElementById('dayNightIcon').alt = now >= sunrise && now < sunset ? 'Sun Icon' : 'Moon Icon';
+            document.getElementById('dayNightIcon').alt = now >= sunrise && now < sunset ? './Assets/IMAGES/Sun.png' : './Assets/IMAGES/Moon.png';
         })
         .catch(error => console.error('Error fetching weather data:', error));
 }
